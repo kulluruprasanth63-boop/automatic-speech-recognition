@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.mic {
+    font-size: 60px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.status {
+    background: #f1f3ff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    padding: 13px 20px;
+    border-radius: 9px;
+    background: #667eea;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+#micButton {
+    background: #28a745;
+}
+
+.stop-btn {
+    background: #dc3545;
+}
+
+.language {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language label {
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-top: 12px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    resize: vertical;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #667eea;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.clear-btn {
+    background: #dc3545;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.stat {
+    text-align: center;
+    background: #f5f6ff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.stat h3 {
+    font-size: 30px;
+    color: #667eea;
+}
+
+.stat p {
+    margin-top: 5px;
+    color: #555;
+}
+
+.information p {
+    margin: 10px 0;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .language {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

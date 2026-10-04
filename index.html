@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Speech Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="mic">🎙️</div>
+        <h1>Automatic Speech Recognition</h1>
+        <p>Convert your speech into text using AI-powered speech recognition</p>
+    </header>
+
+    <div class="card">
+
+        <h2>🎤 Speech Recognition</h2>
+
+        <div class="status" id="status">
+            Click the microphone and start speaking
+        </div>
+
+        <button id="micButton" onclick="startRecognition()">
+            🎙️ Start Speaking
+        </button>
+
+        <button class="stop-btn" onclick="stopRecognition()">
+            ⏹️ Stop
+        </button>
+
+        <div class="language">
+            <label>Select Language:</label>
+
+            <select id="language">
+                <option value="en-US">English</option>
+                <option value="en-IN">English - India</option>
+                <option value="hi-IN">Hindi</option>
+                <option value="te-IN">Telugu</option>
+                <option value="ta-IN">Tamil</option>
+            </select>
+        </div>
+
+        <h3>📝 Recognized Text</h3>
+
+        <textarea
+            id="output"
+            placeholder="Your speech will appear here..."
+        ></textarea>
+
+        <div class="buttons">
+
+            <button onclick="copyText()">
+                📋 Copy
+            </button>
+
+            <button onclick="clearText()" class="clear-btn">
+                🗑️ Clear
+            </button>
+
+            <button onclick="downloadText()">
+                ⬇️ Download
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>📊 Speech Statistics</h2>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3 id="wordCount">0</h3>
+                <p>Words</p>
+            </div>
+
+            <div class="stat">
+                <h3 id="characterCount">0</h3>
+                <p>Characters</p>
+            </div>
+
+            <div class="stat">
+                <h3 id="sentenceCount">0</h3>
+                <p>Sentences</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card information">
+
+        <h2>ℹ️ How It Works</h2>
+
+        <p>1. Click the microphone button.</p>
+        <p>2. Allow microphone permission.</p>
+        <p>3. Speak clearly.</p>
+        <p>4. The browser recognizes your speech.</p>
+        <p>5. Your speech is automatically converted into text.</p>
+
+    </div>
+
+    <footer>
+        <p>Automatic Speech Recognition | Web Technology Mini Project</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
